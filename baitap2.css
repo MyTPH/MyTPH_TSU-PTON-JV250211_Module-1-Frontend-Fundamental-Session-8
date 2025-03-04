@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .child{
+        background-color: #ef4056;
+        color:white;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+.container .child{
+    width: calc(25% - 20px);
+}
+
+@media screen and (max-width: 1024px) {
+    .container .child{
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container .child{
+        width: calc(100% - 20px);
+    }
+}
